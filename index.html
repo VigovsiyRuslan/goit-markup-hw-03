@@ -15,79 +15,93 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html" class="logo"
-          ><span class="logo-web">Web</span> Studio</a
-        >
-
-        <ul class="site-nav list">
-          <li><a class="link current" href="">Студия</a></li>
-          <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-        <ul class="nav-contact list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="page-header">
+      <div class="container">
+        <nav class="navigation">
+          <a href="./index.html" class="logo"
+            ><span class="logo-web">Web</span> Studio</a
+          >
+          <div class="container-site">
+            <ul class="site-nav list">
+              <li><a class="link current" href="">Студия</a></li>
+              <li>
+                <a class="link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li><a href="" class="link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="container-contacts">
+            <ul class="nav-contact list">
+              <li>
+                <a href="mailto:info@devstudio.com" class="link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- Герой -->
       <section class="hero">
-        <h1 class="hero-text">Эфективное решение для вашего бизнеса</h1>
-        <a class="button" href="">Заказать услугу</a>
+        <div class="container">
+          <h1 class="hero-title">Эфективные решение для вашего бизнеса</h1>
+          <a class="button" href="">Заказать услугу</a>
+        </div>
       </section>
       <!-- Особенности -->
       <section class="section">
         <div class="container">
-          <ul>
-            <li>
-              <img src="./images/logo_special_1.svg" alt="Логотип антены" />
-              <h3 class="work-principles">Внимание к деталям</h3>
-              <p class="paragraf-text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li>
-              <img src="./images/logo_special_2.svg" alt="Логотип часов" />
-              <h3 class="work-principles">Пунктуальность</h3>
-              <p class="paragraf-text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li>
-              <img src="./images/logo_special_3.svg" alt="Логотип диаграмы" />
-              <h3 class="work-principles">Планирование</h3>
-              <p class="paragraf-text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li>
-              <img src="./images/logo_special_4.svg" alt="Логотип астронавта" />
-              <h3 class="work-principles">Современные технологии</h3>
-              <p class="paragraf-text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
-            </li>
-          </ul>
+          <div class="feautures-container">
+            <ul class="features-list">
+              <li>
+                <img src="./images/logo_special_1.svg" alt="Логотип антены" />
+                <h3 class="work-principles">Внимание к деталям</h3>
+                <p class="paragraf-text">
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </li>
+              <li>
+                <img src="./images/logo_special_2.svg" alt="Логотип часов" />
+                <h3 class="work-principles">Пунктуальность</h3>
+                <p class="paragraf-text">
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </p>
+              </li>
+              <li>
+                <img src="./images/logo_special_3.svg" alt="Логотип диаграмы" />
+                <h3 class="work-principles">Планирование</h3>
+                <p class="paragraf-text">
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </li>
+              <li>
+                <img
+                  src="./images/logo_special_4.svg"
+                  alt="Логотип астронавта"
+                />
+                <h3 class="work-principles">Современные технологии</h3>
+                <p class="paragraf-text">
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!--Чем мы занимаемся-->
       <section class="section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul>
+          <ul class="activities list">
             <li>
               <img src="./images/desctopfoto.JPG" alt="Фотография компьютера" />
             </li>
@@ -110,153 +124,173 @@
       <!--Наша команда-->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul>
-            <li>
-              <img
-                src="./images/nikolai.jpg"
-                alt="Фото Николай Курченко"
-                width="270"
-              />
-              <h3 class="team-member-name">Николай Курченко</h3>
-              <p class="profession" lang="eng">Product Designer</p>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><img src="./images/social_links/instagram.svg"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./images/social_links/twiter.svg" /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img src="./images/social_links/facebock.svg"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./images/social_links/linked.svg" /></a>
-                </li>
-              </ul>
-            </li>
+          <div class="container-team">
+            <h2 class="section-title">Наша команда</h2>
+            <ul class="team list">
+              <li class="employee">
+                <img
+                  src="./images/nikolai.jpg"
+                  alt="Фото Николай Курченко"
+                  width="270"
+                />
+                <h3 class="team-member-name">Николай Курченко</h3>
+                <p class="profession" lang="eng">Product Designer</p>
+                <div class="content-list">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/social_links/instagram.svg"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/social_links/twiter.svg"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/social_links/facebock.svg"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/social_links/linked.svg"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-            <li>
-              <img
-                src="./images/olga.JPG"
-                alt="Фото Ольга Иванова"
-                width="270"
-              />
-              <h3 class="team-member-name">Ольга Иванова</h3>
-              <p class="profession" lang="eng">Frontend Developer</p>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><img src="./images/social_links/instagram.svg"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./images/social_links/twiter.svg" /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img src="./images/social_links/facebock.svg"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./images/social_links/linked.svg" /></a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <img src="./images/andrei.JPG" alt="Фото Андрея Шевченко" />
-              <h3 class="team-member-name">Андрей Шевченко</h3>
-              <p class="profession" lang="eng">Marketing</p>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><img src="./images/social_links/instagram.svg"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./images/social_links/twiter.svg" /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img src="./images/social_links/facebock.svg"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./images/social_links/linked.svg" /></a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <img src="./images/ivan.JPG" alt="Фото Ивана Николаева" />
-              <h3 class="team-member-name">Иван Николаев</h3>
-              <p class="profession" lang="eng">UI Designer</p>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><img src="./images/social_links/instagram.svg"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./images/social_links/twiter.svg" /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img src="./images/social_links/facebock.svg"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./images/social_links/linked.svg" /></a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+              <li class="employee">
+                <img
+                  src="./images/olga.JPG"
+                  alt="Фото Ольга Иванова"
+                  width="270"
+                />
+                <h3 class="team-member-name">Ольга Иванова</h3>
+                <p class="profession" lang="eng">Frontend Developer</p>
+                <ul class="menu">
+                  <li class="menu-item">
+                    <a href="#"
+                      ><img src="./images/social_links/instagram.svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/social_links/twiter.svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/social_links/facebock.svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/social_links/linked.svg"
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="employee">
+                <img src="./images/andrei.JPG" alt="Фото Андрея Шевченко" />
+                <h3 class="team-member-name">Андрей Шевченко</h3>
+                <p class="profession" lang="eng">Marketing</p>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/social_links/instagram.svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/social_links/twiter.svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/social_links/facebock.svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/social_links/linked.svg"
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="employee">
+                <img src="./images/ivan.JPG" alt="Фото Ивана Николаева" />
+                <h3 class="team-member-name">Иван Николаев</h3>
+                <p class="profession" lang="eng">UI Designer</p>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/social_links/instagram.svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/social_links/twiter.svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/social_links/facebock.svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/social_links/linked.svg"
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!--Постоянные клиенты-->
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянныйе клиенты</h2>
-          <ul>
-            <li>
-              <a href="#"
+          <ul class="clients">
+            <li class="clients-company-one">
+              <a class="logo-company" href="#"
                 ><img
                   src="./images/logo_company/logo_1.svg"
                   alt="Логотип компании 1"
               /></a>
             </li>
-            <li>
+            <li class="clients-company-two">
               <a href="#"
                 ><img
                   src="./images/logo_company/logo_2.svg"
                   alt="Логотип компании 2"
               /></a>
             </li>
-            <li>
+            <li class="clients-company-three">
               <a href="#"
                 ><img
                   src="./images/logo_company/logo_3.svg"
                   alt="Логотип компании 3"
               /></a>
             </li>
-            <li>
+            <li class="clients-company-four">
               <a href="#"
                 ><img
                   src="./images/logo_company/logo_4.svg"
                   alt="Логотип компании 4"
               /></a>
             </li>
-            <li>
+            <li class="clients-company-five">
               <a href="#"
                 ><img
                   src="./images/logo_company/logo_5.svg"
                   alt="Логотип компании 5"
               /></a>
             </li>
-            <li>
+            <li class="clients-company-six">
               <a href="#"
                 ><img
                   src="./images/logo_company/logo_6.svg"
